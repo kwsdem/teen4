@@ -1,11 +1,6 @@
 <div class="info">
   <%= render 'shared/avatar', user: event.user %>
-  <h4 class="name"> <% if event.user.sex == "female" %>
-    Η 
-  <% else %>
-    Ο 
-  <% end %>
-  <%= event.user.name %></h4>
+  <h4 class="name"><%= event.user.name %></h4>
   <span class="action">δημιούργησε μία <%= link_to 'εκδήλωση', event %></span>
 </div>
 <div class="content">
